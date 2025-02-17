@@ -7,10 +7,10 @@ import usercard from "../../public/images/usercard.jpeg";
 
 export function AttendanceCard() {
   return (
-    <Card className="w-full flex bg-white rounded-xl shadow-xl overflow-hidden">
+    <Card className="w-full flex items-center bg-white rounded-xl shadow-xl overflow-hidden">
       {/* user card */}
       <div className="p-4 bg-white border-0">
-      <Card className="p-4 sm:p-5 min-w-[160px] border-0 flex flex-col items-center sm:flex-row gap-3 w-full max-w-xs sm:max-w-sm rounded-lg mx-auto text-center sm:text-left">
+      <Card className="p-4 sm:p-5 border-0 flex flex-col md:items-center sm:flex-row gap-3 w-full max-w-xs sm:max-w-sm rounded-lg mx-auto text-center sm:text-left">
       <Avatar className="h-10 w-10 sm:h-12 sm:w-12">
         <AvatarImage src={usercard.src} alt="Bhaskar Sharma" />
         <AvatarFallback>BS</AvatarFallback>
@@ -29,45 +29,45 @@ export function AttendanceCard() {
             <thead>
               <tr className="border">
                 <th className="py-3 font-medium text-left w-20 border"></th>
-                <th className="py-3 font-medium text-left px-6 border">P</th>
-                <th className="py-3 font-medium text-left px-6 border">A</th>
-                <th className="py-3 font-medium text-left px-6 border">WO</th>
-                <th className="py-3 font-medium text-left px-6 border">
+                <th className="py-3 font-medium text-left px-5 border">P</th>
+                <th className="py-3 font-medium text-left px-5 border">A</th>
+                <th className="py-3 font-medium text-left px-5 border">WO</th>
+                <th className="py-3 font-medium text-left px-5 border">
                   Σ Bonus/Fine
                 </th>
-                <th className="py-3 font-medium text-left px-6 border">OT</th>
-                <th className="py-3 font-medium text-left px-6 border">LT</th>
-                <th className="py-3 font-medium text-left px-6 border">OT+LT</th>
-                <th className="py-3 font-medium text-left px-6 border">Final Att.</th>
-                <th className="py-3 font-medium text-left px-6 border"></th>
+                <th className="py-3 font-medium text-left px-5 border">OT</th>
+                <th className="py-3 font-medium text-left px-5 border">LT</th>
+                <th className="py-3 font-medium text-left px-5 border">OT+LT</th>
+                <th className="py-3 font-medium text-left px-5 border">Final Att.</th>
+                <th className="py-3 font-medium text-left px-5 border"></th>
               </tr>
             </thead>
-            <tbody className="text-gray-600 border ">
+            <tbody className="text-gray-500 border ">
               <tr className="border-b border-gray-200">
                 <td className="py-2.5 text-gray-700 border text-center">Cal.</td>
-                <td className="px-6 py-2.5 border">17.5</td>
-                <td className="px-6 py-2.5 border">2.5</td>
-                <td className="px-6 py-2.5 border">11</td>
-                <td className="px-6 py-2.5 text-emerald-600 border">+2000</td>
-                <td className="px-6 py-2.5 border">17:32 H</td>
-                <td className="px-6 py-2.5 text-red-500 border">-12:00 H</td>
-                <td className="px-6 py-2.5 border">05:32 H</td>
-                <td className="px-6 py-2.5 border">20</td>
-                <td className="px-6 py-2.5 text-xs text-gray-700 border">
+                <td className="px-5 py-2.5 border">17.5</td>
+                <td className="px-5 py-2.5 border">2.5</td>
+                <td className="px-5 py-2.5 border">11</td>
+                <td className="px-5 py-2.5 text-emerald-500 border">+2000</td>
+                <td className="px-5 py-2.5 border">17:32 H</td>
+                <td className="px-5 py-2.5 text-red-500 border">-12:00 H</td>
+                <td className="px-5 py-2.5 border">05:32 H</td>
+                <td className="px-5 py-2.5 border">20</td>
+                <td className="px-5 py-2.5 text-xs text-gray-700 border">
                   Finalised by Rahul
                 </td>
               </tr>
               <tr>
                 <td className="py-2.5 text-gray-700 border text-center">Final</td>
-                <td className="px-6 py-2.5 border">23.5</td>
-                <td className="px-6 py-2.5 border">3.5</td>
-                <td className="px-6 py-2.5 border">4</td>
-                <td className="px-6 py-2.5 text-emerald-600 border">+400</td>
-                <td className="px-6 py-2.5 border">12:30 H</td>
-                <td className="px-6 py-2.5 text-red-500 border">-19:00</td>
-                <td className="px-6 py-2.5 text-red-500 border">-06:30 H</td>
-                <td className="px-6 py-2.5 border">27</td>
-                <td className="px-6 py-2.5 text-xs text-gray-700 border">
+                <td className="px-5 py-2.5 border">23.5</td>
+                <td className="px-5 py-2.5 border">3.5</td>
+                <td className="px-5 py-2.5 border">4</td>
+                <td className="px-5 py-2.5 text-emerald-500 border">+400</td>
+                <td className="px-5 py-2.5 border">12:30 H</td>
+                <td className="px-5 py-2.5 text-red-500 border">-19:00</td>
+                <td className="px-5 py-2.5 text-red-500 border">-05:30 H</td>
+                <td className="px-5 py-2.5 border">27</td>
+                <td className="px-5 py-2.5 text-xs text-gray-700 border">
                   Locked by Shriniwas
                 </td>
               </tr>
